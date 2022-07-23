@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------- INICIO HEADER-------------*/
+header {
+    position: fixed;
+    width: 100vw;
+    z-index: 9;
+}
+
+.menu {
+    background-color: black;
+    z-index: 9;
+}
+
+.menu-itens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu-itens li a {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+.menu2{
+    background-color: black;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-itens2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.menu-itens2 li a {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+.menuMedia {
+    display: none;
+}
+
+.btn:hover {
+    padding: 30px;
+    transition: 0.3s;
+}
+
+
+
+/* ----------------- FIM HEADER-------------*/
+
+/* ----------------- INICIO MAIN-------------*/
+main {
+    padding-top: 45px;
+
+}
+
+.principal {
+    display: flex;
+    align-items: stretch;
+
+}
+
+.backgroundSideA {
+    background-color: #282A36;
+    width: 50vw;
+    overflow: hidden;
+}
+
+/* ---------------------------- ANIMAÇÃO DE ESCONDER TELA A--------------------------*/
+@keyframes hideScreen {
+    0% {
+        width: 50%;
+    }
+
+    50% {
+        width: 25%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.hideScreen {
+    animation: hideScreen 3s linear forwards 27s;
+}
+
+/* --------------------------------------------------------------------------------*/
+.script {
+    color: #587299;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.codFont {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.codFont p {
+    margin: 1, 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0px;
+}
+
+/* ---------------------------- ANIMAÇÃO DE ESCREVER --------------------------*/
+@keyframes write {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 235px;
+    }
+}
+
+@keyframes write2 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 385px;
+    }
+}
+
+@keyframes write3 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes write4 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 6px;
+    }
+}
+
+@keyframes write5 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 150px;
+    }
+}
+
+.write {
+    animation: write 3s steps(27) normal forwards;
+}
+
+.write2 {
+    animation: write2 6s steps(60) normal forwards 3s;
+
+}
+
+.write3 {
+    animation: write2 6s steps(60) normal forwards 9s;
+
+}
+
+.write4 {
+    animation: write2 4s steps(60) normal forwards 15s;
+
+}
+
+.write5 {
+    animation: write3 5s steps(60) normal forwards 18s;
+}
+
+.write6 {
+    animation: write4 1s steps(2) normal forwards 22s;
+}
+
+.write7 {
+    animation: write5 3s steps(60) normal forwards 23s;
+}
+
+/* --------------------------------------------------------------------------------*/
+
+.codFonte p:nth-child(3) {
+    padding: 2px;
+
+}
+
+.codFonte p:nth-child(4) {
+    padding: 2px;
+
+}
+
+.codFonte p:nth-child(5) {
+    padding: 2px;
+
+}
+
+/* --------------------------------------CORES DE FONTE------------------------------------------*/
+.pink {
+    color: #F179C6;
+}
+
+.yellow {
+    color: #E4FA76;
+}
+
+.green {
+    color: #50FA7B;
+}
+
+.blue {
+    color: #9C93F9;
+}
+
+/* --------------------------------------------------------------------------------*/
+.numberLine {
+    width: 25px;
+    border-right: 1px solid #3D3F4A;
+    text-align: center;
+
+    color: #587299;
+    overflow: hidden;
+}
+
+/* ------------------------------ANIMAÇÃO DE MOSTRAR TELA B----------------------------*/
+@keyframes showScreen {
+    0% {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    50% {
+        width: 75vw;
+        height: 75vh;
+    }
+
+    100% {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.showScreen {
+    animation: showScreen 3s linear forwards 27s;
+}
+
+/* --------------------------------------------------------------------------------*/
+.backgroundSideB {
+    background-color: white;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.titleAndSvg {
+    display: flex;
+}
+
+.textCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.texth1h2 {
+    color: black;
+    font-size: 30px;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+
+
+}
+
+/* ------------------------------ANIMAÇÃO DE MOSTRAR APRESENTACAO----------------------------*/
+@keyframes moveCenter {
+    to {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px 20px 0;
+        width: 95vw;
+        text-align: center;
+    }
+}
+
+.moveCenter {
+    animation: moveCenter 2s linear forwards 31s;
+    transition: 0.3s;
+}
+
+@keyframes showText {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 95vw;
+    }
+}
+
+.showText {
+    animation: showText 1s linear forwards 30s;
+    transition: 0.3s;
+}
+
+/* ------------------------------------------------------------------------------*/
+.hideSvg {
+    display: none;
+}
+
+
+/* ----------------- FIM MAIN -------------*/
+
+/* ----------------- INICIO SOBRE MIM-------------*/
+#sobremim {
+    
+    height: 100vh;
+    width: 90vw;
+    padding: 50px;
+}
+
+.img2 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    fill: #3D3F4A;
+    height: 95vh
+}
+
+.aling {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+}
+
+.textSobreMim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: calc(12px + 1.5vw);
+    width: 70vw;
+}
+
+.textSobreMim h1 {
+    margin-bottom: 80px;
+    transition: 0.3s;
+    margin-left: 240px;
+}
+
+.textSobreMim h1:hover {
+    letter-spacing: 5px;
+}
+
+/* ----------------- FIM SOBRE MIM-------------*/
+
+/* ----------------- INICIO PROJETOS-------------*/
+#projetos {
+    
+    padding: 50px;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+
+#projetos h1 {
+    font-size: calc(12px + 2vw);
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+#projetos h1:hover {
+    letter-spacing: 5px;
+}
+
+.projetos {
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+.cardWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cardWrapper::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.cardWrapper h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.cardWrapper p {
+    font-size: 0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.card:hover>.cardWrapper::before {
+    opacity: 1;
+    width: 180px;
+    height: 180px;
+}
+
+.card:hover>.cardWrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 12px;
+}
+
+.card:hover>.cardWrapper h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+/* ----------------- FIM PROJETOS-------------*/
+
+
+/* ----------------- INICIO HABILIDADES-------------*/
+#habilidades {
+    
+    padding-top: 50px;
+    height: 100vh;
+    width: 90vw;
+}
+
+#habilidades h1 {
+    margin-top: 40px;
+    font-size: calc(12px + 2vw);
+    text-align: center;
+    transition: 0.3s;
+}
+
+#habilidades h1:hover {
+    letter-spacing: 5px;
+}
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.icon:hover, .icon1:hover,.icon2:hover, .icon3:hover, .icon4:hover ,.icon5:hover {
+    width: 200px;
+    height: 200px;
+    transition: 0.3s ease-in-out;
+}
+.icon, .icon1, .icon2, .icon3, .icon4, .icon5 {
+    width: 100px;
+    height: 100px;
+}
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.skillAlingText{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.text, .text1, .text2, .text3, .text4,.text5 {
+    display: none;
+    transition: 0.3s;
+    text-align: center;
+}
+.icon2{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.skillText{
+    width: 40vh;
+    text-align: justify;
+    transition: 0.3s;
+}
+
+/* ----------------- FIM HABILIDADES-------------*/
+/* ----------------- INICIO IMAGEM LATERAL COM STICKY-------------*/
+.divSticky{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+.sticky{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    height: 2860px;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    z-index: -1;
+    
+    
+}
+
+.imgOne{
+    position: sticky;
+    top:100px;
+    width: 433px;
+    height: 128.4px;
+}
+.imgTwo{
+    position: sticky;
+    top:228px;
+    width: 433px;
+    height: 133.75px;     
+}
+.imgThree{
+    position: sticky;
+    top:362px;
+    width: 433px;
+    height: 149.8px;    
+}
+.imgFour{
+    position: sticky;
+    top:511px ;
+    width: 433px;
+    height: 123.049px;
+}
+/* ----------------- FIM STICKY-------------*/
+/* ----------------- INICIO CONTATOS E FOOTER-------------*/
+#contatos {
+   
+    padding: 50px;
+    width: 90vw;
+    height: 80vh;
+}
+#contatos a{
+    color: black;
+ text-align: center;
+ border: 1px solid black;
+ text-decoration: none;
+ border-radius: 2px;
+ font-size: 30px;
+ padding: 20px;
+ margin: 50px;
+ margin-top: 400px;
+ transition: 0.3s;
+}
+#contatos h1 {
+    margin-top: 40px;
+    font-size: 33px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#contatos h1:hover {
+    letter-spacing: 5px;
+}
+
+.alingContatos{
+    display: flex;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+#contatos a:hover{
+    box-shadow: 5px 10px 8px black;
+    font-size: 35px;
+    padding: 30px;
+}
+footer h4{
+    text-align: center;
+}
+/* ----------------- FIM CONTATOS E FOOTER-------------*/
+
+
+/* ----------------- INICIO RESPONSIVIDADE -------------*/
+@media (max-width: 768px) {
+    
+    
+    .menuMedia {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+    }
+
+    main {
+        padding-top: 0px !important;
+        width: 95vw!important;
+    }
+    .img2{
+        top:0px !important;
+        width: 70vw !important;
+        height: 90vh !important;
+    }
+    .checkbox {
+        height: 45px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 9;
+        transition: 400ms ease-in-out 0s;
+        background-color: white;
+        opacity: 0.2;
+        border-radius: 50px;
+    }
+
+    .checkbox .trace {
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .checkbox .trace:nth-child(1) {
+        top: 12px;
+        transform: rotate(0);
+    }
+
+    .checkbox .trace:nth-child(2) {
+        top: 22px;
+        transform: rotate(0);
+    }
+
+    .checkbox .trace:nth-child(3) {
+        top: 32px;
+        transform: rotate(0);
+    }
+
+    #toggle {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu2 {
+        height: 100vh;
+        width: 40vw;
+        background-color: black;
+        z-index: 8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        display: none;
+        visibility: visible;
+
+    }
+
+    .menu-itens2 {
+
+        background: transparent;
+        height: 100vh;
+        width: 35vw;
+        box-shadow: 0px 0px 0px 0px white;
+        z-index: 8;
+        transition: 400ms ease-in-out 0s;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        list-style: none;
+        background-color: transparent;
+
+    }
+
+    .menu-itens2 li a {
+        font-size: 24px;
+        width: auto;
+        white-space: nowrap;
+
+    }
+
+    .btn:hover {
+        padding: 0px;
+    }
+
+    #toggle:checked+.checkbox .trace:nth-child(1) {
+        transform: rotate(45deg);
+        background-color: white;
+        top: 21px;
+    }
+
+    #toggle:checked+.checkbox .trace:nth-child(2) {
+        transform: translateX(-100px);
+        width: 15px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #toggle:checked+.checkbox .trace:nth-child(3) {
+        transform: rotate(-45deg);
+        background-color: white;
+        top: 21px;
+    }
+
+    #toggle:checked+.checkbox {
+        background-color: black;
+    }
+    .backgroundSideA{
+        display: none;
+    }
+    .backgroundSideB{
+        animation: none !important;
+
+    }
+    .showScreen{
+        animation: none !important;
+    }
+    .texth1h2{
+        width: auto !important;
+        font-size: 17px !important;
+    }
+    .moveCenter{
+        animation: none !important;
+        
+    }
+    .textCenter{
+        width: 100vw !important;
+    }
+    .aling{
+        padding-top: 0px !important;
+        justify-content: flex-start !important;
+    }
+    .textSobreMim {
+        font-size: calc(12px + 1.5vw)!important;
+        width: 45vw;
+    }
+    .textSobreMim h1 {
+        margin-bottom: 30px !important;
+        margin-left: 0px !important;
+    }
+    .textSobreMim p {
+        padding: 10px;
+    }
+    
+    .card{
+        width: 20vw !important;
+        height: 18vh !important;
+        margin: 15px !important;
+        border: 2px solid black !important;
+    }
+    #projetos{
+        height: 100vh !important;
+        padding: 20px 0px !important;
+        width: 50vw !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+    }
+    .projetos{
+        flex-direction: column !important;
+        
+    }
+    .cardWrapper {
+        position: static !important;
+        z-index: -1 !important;
+    }
+    
+    .card:hover>.cardWrapper::before {
+        width: 110px !important;
+        height: 110px !important;
+
+    }
+    .cardWrapper::before {
+        display: block !important;    
+    
+    }
+    .icon, .icon1, .icon2, .icon3, .icon4, .icon5 { 
+        width: 60vw !important;
+        height: 25vh !important;
+    }
+    .skill{
+        padding: 0px !important;
+    }
+    .imgOne{
+        position: sticky;
+        top:212.5px !important;
+        width: 70vw !important;
+        height: 128.4px;
+        
+    }
+    .imgTwo{
+        position: sticky;
+        top:371px !important;
+        width: 70vw !important;
+        height: 133.75px;     
+    }
+    .imgThree{
+        position: sticky;
+        top: 536.3px !important;
+        width: 70vw !important;
+        height: 149.8px;    
+    }
+    .imgFour{
+        position: sticky;
+        top:720px  !important;
+        width: 70vw !important;
+        height: 123.049px;
+    }
+    #habilidades{
+        padding-top:20px !important;
+        height: 100vw !important;
+        width: 50vw !important;
+    }
+    #habilidades h1 {
+        
+        font-size: calc(12px + 5vw) !important
+    }
+    .habilidades{
+        padding-top: 30px !important;
+        width: 50vw !important;
+    }
+    .icon, .icon1, .icon2, .icon3, .icon4, .icon5 {
+        width: 10vw !important;
+        height: 10vh !important;
+    }
+    .skillAlingText{
+        justify-content: flex-end !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .skillText {
+        padding-top: 40px !important;
+        width: 62vw !important;
+        font-size: calc(12px + 3vw)!important;
+    }
+    .skillText p {
+        font-size: calc(12px + 2vw)!important;
+    }
+    #sobremim{
+        padding: 20px 0px 0px 0px !important;
+    }
+    #projetos h1 {
+        font-size: calc(12px + 5vw) !important;
+        padding-right:50px ;
+    }
+    #contatos {
+        padding: 0px !important;
+        width: 50vw !important;
+    }
+    #contatos h1 {
+        font-size: calc(12px + 5vw) !important;
+    }
+    .alingContatos{
+        margin-top: 50px  !important;
+        margin-left: 0px  !important; 
+        height: 40vh !important;
+        justify-content:space-around;
+        flex-direction: column !important;
+    }
+    #contatos a {
+        margin: 30px !important;
+        padding:30px !important;
+        
+    }
+    .sticky{
+        height: 380vh !important;
+        padding-bottom: 0px !important;
+    }
+    footer h4{
+        font-size: 12px;
+    }
+}
