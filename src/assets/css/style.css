@@ -28,7 +28,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5vw;
+    padding: 2vh;
     list-style: none;
     text-decoration: none;
     background-color: transparent;
@@ -36,7 +36,7 @@ header {
 
 .menu-itens li a {
     text-decoration: none;
-    padding: 1.5vw;
+    padding: 2vh;
     color: white;
 }
 .menu2{
