@@ -649,7 +649,9 @@ main {
     font-size: calc(10px + 2vw);
     padding: 3vw;
 }
-footer h4{
+footer p{
+    font-size: calc(10px + 1vw);
+    width: 0 auto;
     text-align: center;
 }
 /* ----------------- FIM CONTATOS E FOOTER-------------*/
@@ -985,7 +987,9 @@ footer h4{
         
     }
     
-    footer h4{
+    footer p{
         font-size: calc(10px + 1vw);
+        width: 0 auto;
+        text-align: center;
     }
 }
