@@ -662,16 +662,17 @@ footer h4{
     }
     .imgOne{
         position: sticky;
-        top:120px !important;
+        top:15vh !important;
         width: 70vw !important;
         height: 128.4px;
         
     }
     .imgTwo{
         position: sticky;
-        top:196px !important;
+        top:24.7vh !important;
         width: 70vw !important;
-        height: 133.75px;     
+        height: 133.75px; 
+        margin-bottom: 107px;       
     }
     .imgThree{
         position: sticky;
@@ -699,7 +700,8 @@ footer h4{
         position: sticky;
         top:24.5vh !important;
         width: 70vw !important;
-        height: 133.75px;     
+        height: 133.75px;  
+        margin-bottom: 107px;   
     }
     .imgThree{
         position: sticky;
@@ -927,7 +929,7 @@ footer h4{
 
     #habilidades{
         padding-top:20px !important;
-        height: 100vw !important;
+        height: 100vh !important;
         width: 50vw !important;
     }
     #habilidades h1 {
